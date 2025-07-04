@@ -1,5 +1,14 @@
 @use "tailwindcss";
 @use "./variable.scss" as *;
+
 .background-color {
   background-color: $background;
+}
+
+.text-color-primary {
+  color: $text-primary;
+}
+
+.text-color-secondary {
+  color: $text-secondary;
 }

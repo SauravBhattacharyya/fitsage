@@ -23,7 +23,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.variable} h-screen w-screen antialiased`}>
+      <body
+        className={`${outfit.variable} h-screen w-screen antialiased background-color `}
+      >
         <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>
     </html>
