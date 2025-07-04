@@ -14,7 +14,8 @@ export default function SplashScreen() {
       transition={{ duration: 1 }}
     >
       <Image src={IMAGES.logo} width={256} height={256} alt="Logo" />
-      <h1 className={styles.name}>FitSage – Your AI Fitness Companion</h1>
+      <h1 className={styles.name}>FitSage</h1>
+      <h2 className={styles.description}>Your AI Fitness Companion</h2>
     </motion.div>
   );
 }
