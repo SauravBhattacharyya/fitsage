@@ -1,3 +1,4 @@
+import ReactQueryProvider from "@/lib/reactQueryProvider";
 import "@/styles/global.scss";
 import { Metadata } from "next";
 
@@ -12,7 +13,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <ReactQueryProvider>{children}</ReactQueryProvider>
+      </body>
     </html>
   );
 }
