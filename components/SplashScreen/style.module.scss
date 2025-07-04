@@ -7,4 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  .name {
+    color: $text-primary;
+    font-size: 26px;
+    margin-top: 20px;
+  }
 }

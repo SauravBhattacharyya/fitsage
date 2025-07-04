@@ -2,7 +2,13 @@ import { IMAGES } from "@/constants/images";
 import ReactQueryProvider from "@/lib/reactQueryProvider";
 import "@/styles/global.scss";
 import { Metadata } from "next";
+import { Outfit } from "next/font/google";
 
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 export const metadata: Metadata = {
   title: "FitSage – Your AI Fitness Companion",
   description:
@@ -17,7 +23,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="h-screen w-screen antialiased">
+      <body className={`${outfit.variable} h-screen w-screen antialiased`}>
         <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>
     </html>
