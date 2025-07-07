@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between">
+    <header className="flex items-center justify-between px-2 md:px-10 py-2">
       <motion.div
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}

@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} h-screen w-screen antialiased background-color `}
+        className={`${outfit.variable} h-screen w-screen antialiased background-color`}
       >
         <ReactQueryProvider>{children}</ReactQueryProvider>
       </body>
